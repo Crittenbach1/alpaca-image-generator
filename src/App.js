@@ -118,7 +118,12 @@ function App() {
                      <button onClick={() => setHair("short")}>short</button>,
                      <button onClick={() => setHair("bang")}>bang</button>]
            case 'leg':
-             return [<button onClick={() => setLeg("default")}>default</button>, <button onClick={() => setLeg("bubbletea")}>bubbletea</button>]
+             return [<button onClick={() => setLeg("default")}>default</button>,
+                     <button onClick={() => setLeg("bubbletea")}>bubbletea</button>,
+                     <button onClick={() => setLeg("cookie")}>cookie</button>,
+                     <button onClick={() => setLeg("gameconsole")}>gameconsole</button>,
+                     <button onClick={() => setLeg("tiltbackward")}>tiltbackward</button>,
+                     <button onClick={() => setLeg("tiltforward")}>tiltforward</button>]
            case 'mouth':
              return [<button onClick={() => setMouth("default")}>default</button>, <button onClick={() => setMouth("astonished")}>astonished</button>]
            case 'nose':

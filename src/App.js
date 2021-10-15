@@ -106,7 +106,9 @@ function App() {
                      <button onClick={() => setAccessories("glasses")}>glasses</button>,
                      <button onClick={() => setAccessories("headphone")}>headphone</button>]
            case 'ears':
-             return [<button onClick={() => setEars("default")}>default</button>, <button onClick={() => setEars("tiltbackward")}>tiltbackward</button>]
+             return [<button onClick={() => setEars("default")}>default</button>,
+                     <button onClick={() => setEars("tiltbackward")}>tiltbackward</button>,
+                     <button onClick={() => setEars("tiltforward")}>tiltforward</button>]
            case 'hair':
              return [<button onClick={() => setHair("default")}>default</button>, <button onClick={() => setHair("bang")}>bang</button>]
            case 'leg':

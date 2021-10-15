@@ -125,7 +125,11 @@ function App() {
                      <button onClick={() => setLeg("tiltbackward")}>tiltbackward</button>,
                      <button onClick={() => setLeg("tiltforward")}>tiltforward</button>]
            case 'mouth':
-             return [<button onClick={() => setMouth("default")}>default</button>, <button onClick={() => setMouth("astonished")}>astonished</button>]
+             return [<button onClick={() => setMouth("default")}>default</button>,
+                     <button onClick={() => setMouth("eating")}>eating</button>,
+                     <button onClick={() => setMouth("laugh")}>laugh</button>,
+                     <button onClick={() => setMouth("tongue")}>tongue</button>,
+                     <button onClick={() => setMouth("astonished")}>astonished</button>]
            case 'nose':
              return [<button onClick={() => setNose("default")}>default</button>]
            case 'eyes':

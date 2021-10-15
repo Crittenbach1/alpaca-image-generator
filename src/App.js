@@ -110,7 +110,13 @@ function App() {
                      <button onClick={() => setEars("tiltbackward")}>tiltbackward</button>,
                      <button onClick={() => setEars("tiltforward")}>tiltforward</button>]
            case 'hair':
-             return [<button onClick={() => setHair("default")}>default</button>, <button onClick={() => setHair("bang")}>bang</button>]
+             return [<button onClick={() => setHair("default")}>default</button>,
+                     <button onClick={() => setHair("curls")}>curls</button>,
+                     <button onClick={() => setHair("elegant")}>elegant</button>,
+                     <button onClick={() => setHair("fancy")}>fancy</button>,
+                     <button onClick={() => setHair("quiff")}>quiff</button>,
+                     <button onClick={() => setHair("short")}>short</button>,
+                     <button onClick={() => setHair("bang")}>bang</button>]
            case 'leg':
              return [<button onClick={() => setLeg("default")}>default</button>, <button onClick={() => setLeg("bubbletea")}>bubbletea</button>]
            case 'mouth':

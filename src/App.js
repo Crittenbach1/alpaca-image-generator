@@ -101,7 +101,10 @@ function App() {
                      <button onClick={() => setNeck("bendforward")}>bendforward</button>,
                      <button onClick={() => setNeck("thick")}>thick</button>]
            case 'accessories':
-             return [<button onClick={() => setAccessories("earings")}>earings</button>, <button onClick={() => setAccessories("flower")}>flower</button>]
+             return [<button onClick={() => setAccessories("earings")}>earings</button>,
+                     <button onClick={() => setAccessories("flower")}>flower</button>,
+                     <button onClick={() => setAccessories("glasses")}>glasses</button>,
+                     <button onClick={() => setAccessories("headphone")}>headphone</button>]
            case 'ears':
              return [<button onClick={() => setEars("default")}>default</button>, <button onClick={() => setEars("tiltbackward")}>tiltbackward</button>]
            case 'hair':

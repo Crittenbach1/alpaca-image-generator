@@ -16,9 +16,9 @@ const Neck = (props) => {
 
               {(() => {
                  switch (props.neck) {
-                   case 'bend-backward':
+                   case 'bendbackward':
                    return <img src={bendbackward} className="neck" />
-                   case 'bend-forward':
+                   case 'bendforward':
                    return <img src={bendforward} className="neck" />
                    case 'default':
                    return <img src={defaultt} className="neck" />

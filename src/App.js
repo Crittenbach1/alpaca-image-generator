@@ -96,7 +96,10 @@ function App() {
                      <button onClick={() => setBackground("yellow60")}>yellow60</button>,
                      <button onClick={() => setBackground("yellow70")}>yellow70</button>]
            case 'neck':
-             return [<button onClick={() => setNeck("bend-backward")}>bendbackward</button>, <button onClick={() => setNeck("bend-forward")}>bendforward</button>]
+             return [<button onClick={() => setNeck("default")}>default</button>,
+                     <button onClick={() => setNeck("bendbackward")}>bendbackward</button>,
+                     <button onClick={() => setNeck("bendforward")}>bendforward</button>,
+                     <button onClick={() => setNeck("thick")}>thick</button>]
            case 'accessories':
              return [<button onClick={() => setAccessories("earings")}>earings</button>, <button onClick={() => setAccessories("flower")}>flower</button>]
            case 'ears':

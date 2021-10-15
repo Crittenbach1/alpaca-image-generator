@@ -31,36 +31,26 @@ function App() {
 
   return (
     <div className="App">
+
       <header className="App-header">
+        <p className="title"> ALPACA GENERATOR </p>
 
-        <p>
-          ALPACA GENERATOR
-        </p>
-
-        <Neck neck={neck} />
-        <Backgrounds background={background} />
-        <Accessories accessories={accessories} />
-        <Ears ears={ears} />
-        <Hair hair={hair} />
-        <Leg leg={leg} />
-        <Mouth mouth={mouth} />
-        <Nose nose={nose} />
-        <Eyes eyes={eyes} />
-
-
-      </header>
-
-
-
-
-      <div className="alpaca">
-
-
-
+      <div className="Alpaca">
+      <Neck neck={neck} />
+      <Backgrounds background={background} />
+      <Accessories accessories={accessories} />
+      <Ears ears={ears} />
+      <Hair hair={hair} />
+      <Leg leg={leg} />
+      <Mouth mouth={mouth} />
+      <Nose nose={nose} />
+      <Eyes eyes={eyes} />
       </div>
 
-      <div>
-      <header>Menu 1</header>
+      <div className="Menu1">
+      <header>ACCESSORIZE THE ALPACA'S</header>
+
+
       <button onClick={() => setCurrentMenu("background")}>background</button>
       <button onClick={() => setCurrentMenu("neck")}>neck</button>
       <button onClick={() => setCurrentMenu("accessories")}>accessories</button>
@@ -72,8 +62,10 @@ function App() {
       <button onClick={() => setCurrentMenu("eyes")}>eyes</button>
       </div>
 
-      <div>
-      <header>Menu 2</header>
+      <div className="Menu2">
+      <header>STYLE</header>
+
+
       {(() => {
          switch (currentMenu) {
            case 'background':
@@ -143,7 +135,10 @@ function App() {
            return null
        }
        })()}
-       </div>
+     </div>
+
+     </header>
+
 
     </div>
   );

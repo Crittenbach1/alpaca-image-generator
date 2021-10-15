@@ -1,11 +1,21 @@
 .App {
   text-align: center;
+  width: 50%;
+  /*border: 5px solid green;*/
+
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alpaca {
+  float: right;
+  margin-left: 0;
+  /*border: 5px solid green;*/
+  /*padding: 10px;*/
+  margin: 20px;
+  padding: 10px;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,14 +24,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #EEECEE;
+
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  float: right;
+
 }
 
 .App-link {
@@ -35,4 +43,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.view {
+
+}
+
+.background {
+   position: absolute;
+   z-index: 1;
+}
+
+.neck {
+  position: absolute;
+  z-index: 2;
+}
+.accessories {
+  position: absolute;
+  z-index: 4;
+}
+.ears {
+  position: absolute;
+  z-index: 3;
+}
+.eyes {
+  position: absolute;
+  z-index: 4;
+}
+
+.hair {
+  position: absolute;
+  z-index: 4;
+}
+
+.leg {
+  position: absolute;
+  z-index: 2;
+}
+.mouth {
+  position: absolute;
+  z-index: 4;
+}
+.nose {
+  position: absolute;
+  z-index: 3;
 }

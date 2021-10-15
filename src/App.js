@@ -77,7 +77,24 @@ function App() {
       {(() => {
          switch (currentMenu) {
            case 'background':
-             return [<button onClick={() => setBackground("blue60")}>blue60</button>, <button onClick={() => setBackground("red50")}>red50</button>]
+             return [<button onClick={() => setBackground("blue50")}>blue50</button>,
+                     <button onClick={() => setBackground("blue60")}>blue60</button>,
+                     <button onClick={() => setBackground("blue70")}>blue70</button>,
+                     <button onClick={() => setBackground("darkblue30")}>darkblue30</button>,
+                     <button onClick={() => setBackground("darkblue50")}>darkblue50</button>,
+                     <button onClick={() => setBackground("darkblue70")}>darkblue70</button>,
+                     <button onClick={() => setBackground("green50")}>green50</button>,
+                     <button onClick={() => setBackground("green60")}>green60</button>,
+                     <button onClick={() => setBackground("green70")}>green70</button>,
+                     <button onClick={() => setBackground("grey40")}>grey40</button>,
+                     <button onClick={() => setBackground("grey70")}>grey70</button>,
+                     <button onClick={() => setBackground("grey80")}>grey80</button>,
+                     <button onClick={() => setBackground("red50")}>red50</button>,
+                     <button onClick={() => setBackground("red60")}>red60</button>,
+                     <button onClick={() => setBackground("red70")}>red70</button>,
+                     <button onClick={() => setBackground("yellow50")}>yellow50</button>,
+                     <button onClick={() => setBackground("yellow60")}>yellow60</button>,
+                     <button onClick={() => setBackground("yellow70")}>yellow70</button>]
            case 'neck':
              return [<button onClick={() => setNeck("bend-backward")}>bendbackward</button>, <button onClick={() => setNeck("bend-forward")}>bendforward</button>]
            case 'accessories':

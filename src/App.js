@@ -133,7 +133,12 @@ function App() {
            case 'nose':
              return [<button onClick={() => setNose("default")}>default</button>]
            case 'eyes':
-             return [<button onClick={() => setEyes("default")}>default</button>, <button onClick={() => setEyes("angry")}>angry</button>]
+             return [<button onClick={() => setEyes("default")}>default</button>,
+                     <button onClick={() => setEyes("naughty")}>naughty</button>,
+                     <button onClick={() => setEyes("panda")}>panda</button>,
+                     <button onClick={() => setEyes("smart")}>smart</button>,
+                     <button onClick={() => setEyes("star")}>star</button>,
+                     <button onClick={() => setEyes("angry")}>angry</button>]
          default:
            return null
        }
